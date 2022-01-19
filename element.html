@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM API</title>
+</head>
+
+<body>
+    <h1 id="atas">Frontend</h1>
+    <script>
+        var judul = document.createElement("h1");
+        var subjudul = document.createElement("h2");
+        var isi = document.createElement("p");
+        judul.textContent = "Belajar Javascript";
+        //judul.innerText = "Hai Helloo..";
+        subjudul.textContent = "Belajar Javascript DOM";
+        isi.textContent = "Isi Artikel";
+        document.body.append(judul);
+        document.body.append(subjudul);
+        document.body.append(isi);
+        var atas = document.getElementById('atas');
+        atas.remove();
+        console.log(atas);
+    </script>
+</body>
+
+</html>

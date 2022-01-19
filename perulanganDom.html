@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+    <title>DOM API</title>
+</head>
+
+<body>
+    <script>
+        var tag = ["h1", "h2"];
+        var font = ["Courier New", "Arial"];
+        var warna = ["blue", "red"];
+        for (var start = 1; start <= 5; start++) {
+            var isi = document.createElement(tag[Math.floor(Math.random() * 3)]);
+            isi.textContent = "Say Hello..";
+            isi.style.fontFamily = font[Math.floor(Math.random() * 3)];
+            isi.style.color = warna[Math.floor(Math.random() * 3)];
+            document.body.append(isi);
+        }
+    </script>
+</body>
+
+</html>

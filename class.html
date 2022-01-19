@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM API</title>
+</head>
+
+<body>
+    <p id="kepala" class="atas">Header</p>
+    <p class="paragraf">P1 halo halo halo halo halo halo</p>
+    <p class="paragraf">P2 halo halo halo halo halo halo</p>
+    <p class="paragraf">P3 halo halo halo halo halo halo</p>
+    <p id="kaki" class="bawah">Footer</p>
+    <script>
+        var atas = document.getElementsByClassName("atas");
+        atas[0].style.color = "red";
+        kepala.style.padding = "30px";
+        kepala.style.color = "green";
+
+        var paragraf = document.getElementsByClassName("paragraf");
+        console.log(paragraf);
+        paragraf[0].style.color = "purple";
+        paragraf[1].style.color = "green";
+        paragraf[2].style.color = "blue";
+
+        var bawah = document.getElementsByClassName("bawah");
+        bawah[0].style.color = "purple";
+        bawah.style.padding = "30px";
+    </script>
+
+</body>
+
+</html>

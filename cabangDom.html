@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <title>DOM API</title>
+</head>
+
+<body>
+    <script>
+        var konfirmasi = confirm("apakah anda akan membuat judul?");
+        if (konfirmasi) {
+            var judul = document.createElement("h1");
+            var isijudul = prompt("silahkan isi judulnya :", "");
+            judul.textContent = isijudul;
+            var konfirmasi2 = confirm("apakah diberi warna merah");
+            if (konfirmasi2) {
+                judul.style.color = "red";
+            }
+            document.body.append(judul);
+
+        } else {
+            var isi = document.createElement("p");
+            var konten = prompt("Silahkan isi kontennya :", "");
+            isi.textContent = konten;
+            document.body.append(isi);
+        }
+    </script>
+</body>
+
+</html>

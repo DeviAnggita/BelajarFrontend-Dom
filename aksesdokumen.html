@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM API</title>
+</head>
+
+<body id="konten">
+    <div id="tulis"></div>
+    <p>paragraf</p>
+    <div id="tulis2"></div>
+    <script>
+        var tulis = document.getElementById("tulis");
+        tulis.innerText = "Hai Hello...";
+        tulis.style.color = "red";
+        tulis.style.fontFamily = "Courier New";
+        tulis.style.fontSize = "50px";
+        tulis.style.backgroundColor = "gold";
+        tulis.style.padding = "100px";
+        tulis.style.fontWeight = "bold";
+        tulis.style.fontStyle = "italic";
+
+        var konten = document.getElementById("konten");
+        konten.style.backgroundColor = "cyan";
+
+        tulis2.innerText = "Ini Div Yang Kedua...";
+        tulis2.style.color = "yellow";
+        tulis2.style.backgroundColor = "green";
+        tulis2.style.padding = "100px";
+    </script>
+</body>
+
+</html>
